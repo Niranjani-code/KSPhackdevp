@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Police Department Login</title>
+  <style>
+    /* Your existing styles */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+      background-image: url("C:\\Users\\vaibh_e47rn93\\SignUpForm-HTML_NodeJS_MongoDB\\public\\bg_image\\KSP1.png");
+      background-size: cover;
+    }
+    #login-container {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #video-feed {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border: 2px solid green;
+    }
+    #login-btn {
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #login-form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+    #login-status, #login-error {
+      font-weight: bold;
+    }
+    #login-status {
+      color: green;
+    }
+    #login-error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="login-container">
+    <h2>Police Department Login</h2>
+    <form id="login-form" action="/login" method="POST">
+      <input type="text" id="username" name="username" placeholder="Username" required>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <video id="video-feed" autoplay muted></video>
+      <input type="hidden" id="face_image" name="face_image">
+      <button id="login-btn" type="submit">Login</button>
+      <p id="login-status"></p>
+      <p id="login-error"></p>
+    </form>
+    <p>New User? <a href="/signup">Sign Up</a></p> <!-- Add this line -->
+  </div>
+
+  <script>
+    async function setupCamera() {
+      const video = document.getElementById('video-feed');
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        video.srcObject = stream;
+        return new Promise((resolve) => {
+          video.onloadedmetadata = () => resolve(video);
+        });
+      } catch (error) {
+        console.error('Error accessing camera:', error);
+        document.getElementById('login-error').innerText = 'Error accessing camera. Please check your camera permissions and ensure you are using HTTPS.';
+      }
+    }
+
+    async function captureImage() {
+      const video = document.getElementById('video-feed');
+      const canvas = document.createElement('canvas');
+      const context = canvas.getContext('2d');
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      context.drawImage(video, 0, 0, canvas.width, canvas.height);
+      return canvas.toDataURL('image/png');
+    }
+
+    async function main() {
+      await setupCamera();
+      const loginButton = document.getElementById('login-btn');
+      const loginForm = document.getElementById('login-form');
+      const faceImageInput = document.getElementById('face_image');
+
+      loginButton.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const faceImage = await captureImage();
+        faceImageInput.value = faceImage;
+
+        // Perform AJAX request instead of form submission
+        const formData = new FormData(loginForm);
+        const jsonData = {};
+        formData.forEach((value, key) => jsonData[key] = value);
+
+        const response = await fetch(loginForm.action, {
+          method: loginForm.method,
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(jsonData)
+        });
+
+        const result = await response.text();
+        if (response.ok) {
+          document.getElementById('login-status').innerText = "Login successful!";
+          setTimeout(() => window.location.href = '/qrcode', 2000); // Redirect to QR code page after 2 seconds
+        } else {
+          document.getElementById('login-error').innerText = result;
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', main);
+  </script>
+</body>
+</html>
