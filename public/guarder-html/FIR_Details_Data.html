@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charge Sheeted Details</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0; /* Light gray background */
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #fff; /* White background */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd; /* Bottom border */
+    }
+    th {
+        background-color: #3498db; /* Blue background for header */
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2; /* Light gray background for even rows */
+    }
+    tr:hover {
+        background-color: #e2e2e2; /* Darker background color on hover */
+    }
+</style>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>FIR Details Data</h1>
+    </header>
+
+    <section class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>District Name</th>
+                    <th>Unit Name</th>
+                    <th>FIR No</th>
+                    <th>RI</th>
+                    <th>Year</th>
+                    <th>Month</th>
+                    <th>Offence From Date</th>
+                    <th>Offence To Date</th>
+                    <th>FIR Reg DateTime</th>
+                    <th>FIR Date</th>
+                    <th>FIR Type</th>
+                    <th>FIR Stage</th>
+                    <th>Complaint Mode</th>
+                    <th>CrimeGroup Name</th>
+                    <th>CrimeHead Name</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Act Section</th>
+                    <th>IO Name</th>
+                    <th>KGID</th>
+                    <th>IO Assigned Date</th>
+                    <th>Internal IO</th>
+                    <th>Place of Offence</th>
+                    <th>Distance from PS</th>
+                    <th>Beat Name</th>
+                    <th>Village Area Name</th>
+                    <th>Male</th>
+                    <th>Female</th>
+                    <th>Boy</th>
+                    <th>Girl</th>
+                    <th>Age 0</th>
+                    <th>Victim Count</th>
+                    <th>Accused Count</th>
+                    <th>Arrested Male</th>
+                    <th>Arrested Female</th>
+                    <th>Arrested Count No.</th>
+                    <th>Accused ChargeSheeted Count</th>
+                    <th>Conviction Count</th>
+                    <th>FIR ID</th>
+                    <th>Unit ID</th>
+                    <th>Crime No</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add your dataset rows here -->
+                <!-- Example row: -->
+                <tr>
+                    <td>Bagalkot</td>
+                    <td>Amengad PS</td>
+                    <td>0001/2016</td>
+                    <td>1</td>
+                    <td>2016</td>
+                    <td>1</td>
+                    <td>00:00.0</td>
+                    <td>05:00.0</td>
+                    <td>00:00.0</td>
+                    <td>5/1/2016</td>
+                    <td>Non Heinous</td>
+                    <td>Dis/Acq</td>
+                    <td>Written</td>
+                    <td>POCSO</td>
+                    <td>Others</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>PROTECTION OF CHILDREN FROM SEXUAL OFFENCES ACT 2012 U/s: 12 IPC 1860 U/s: 306,363 PROTECTION OF CHILDREN FROM SEXUAL OFFENCES ACT 2012 U/s: 18 </td>
+                    <td>R S BIRADAR (PI)</td>
+                    <td>1898733</td>
+                    <td>NULL</td>
+                    <td>42900007</td>
+                    <td>KAMATAGI BUS STAND, KAMATAGI BUS STAND</td>
+                    <td>WEST FROM PS 12 KM</td>
+                    <td>RURAL BEAT NO 13</td>
+                    <td>KAMATAGI</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>2016000002</td>
+                    <td>1245</td>
+                    <td>10470124520160001</td>
+                </tr>
+                <tr>
+                    <td>Bagalkot</td>
+                    <td>Amengad PS</td>
+                    <td>0002/2016</td>
+                    <td>1</td>
+                    <td>2016</td>
+                    <td>1</td>
+                    <td>30:00.0</td>
+                    <td>35:00.0</td>
+                    <td>00:00.0</td>
+                    <td>12/1/2016</td>
+                    <td>Non Heinous</td>
+                    <td>Convicted</td>
+                    <td>Sue-moto by Police</td>
+                    <td>KARNATAKA POLICE ACT 1963</td>
+                    <td>Street Gambling (87)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>KARNATAKA POLICE ACT, 1963 U/s: 87</td>
+                    <td>G.H.KUPPI (PSI)</td>
+                    <td>1332599</td>
+                    <td>NULL</td>
+                    <td>123600010</td>
+                    <td>RAKKASAGI VILLEGE IN FRONT MOUNESHWAR TEMPEL, RAKKASAGI VILLEGE IN FRONT MOUNESHWAR TEMPEL</td>
+                    <td>WEST FROM PS 2 KM</td>
+                    <td>RURAL BEAT NO 6</td>
+                    <td>SULEBAVI</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2016000003</td>
+                    <td>1245</td>
+                    <td>10470124520160002</td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td>Bagalkot</td>
+                        <td>Amengad PS</td>
+                        <td>0022/2016</td>
+                        <td>1</td>
+                        <td>2016</td>
+                        <td>2</td>
+                        <td>25:00.0</td>
+                        <td>30:00.0</td>
+                        <td>10:00.0</td>
+                        <td>10/2/2016</td>
+                        <td>Non Heinous</td>
+                        <td>Pending Trial</td>
+                        <td>Written</td>
+                        <td>THEFT</td>
+                        <td>Other Items Not Included Above</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>IPC 1860 U/s: 379 MMDR (MINES AND MINERALS REGULATION OF DEVELOPMENT) ACT 1957 U/s: 21,4(1A),4(1)</td>
+                        <td>P.A.JADAV (PSI)</td>
+                        <td>1016018</td>
+                        <td>NULL</td>
+                        <td>188800039</td>
+                        <td>MIDDLE OF AIHOLE KALIGUDD VILLAGE MALAPRABHA RIVER, MIDDLE OF AIHOLE KALIGUDD VILLAGE MALAPRABHA RIVER</td>
+                        <td>SOUTH FROM PS TOWARDS 11 KM</td>
+                        <td>RURAL BEAT NO 3</td>
+                        <td>AIHOLE</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>2016000022</td>
+                        <td>1245</td>
+                        <td>10470124520160021</td>
+                    </tr>
+                    <tr>
+                        <td>Bagalkot</td>
+                        <td>Amengad PS</td>
+                        <td>0023/2016</td>
+                        <td>1</td>
+                        <td>2016</td>
+                        <td>2</td>
+                        <td>30:00.0</td>
+                        <td>35:00.0</td>
+                        <td>20:00.0</td>
+                        <td>11/2/2016</td>
+                        <td>Heinous</td>
+                        <td>Convicted</td>
+                        <td>Written</td>
+                        <td>MOTOR VEHICLE ACCIDENTS FATAL</td>
+                        <td>Other Roads</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>IPC 1860 U/s: 279,337,338,304(A)</td>
+                        <td>Karuneshagowda J (PI)</td>
+                        <td>1820048</td>
+                        <td>NULL</td>
+                        <td>97500025</td>
+                        <td>GUDUR BUS STAND, GUDUR BUS STAND</td>
+                        <td>NORTH FROM PS 14 KM</td>
+                        <td>GUDUR TOWN BEAT NO 21</td>
+                        <td>GUDUR</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2016000023</td>
+                        <td>1245</td>
+                        <td>10470124520160022</td>
+                    </tr>
+                    <tr>
+                        <td>Bagalkot</td>
+                        <td>Amengad PS</td>
+                        <td>0024/2016</td>
+                        <td>1</td>
+                        <td>2016</td>
+                        <td>2</td>
+                        <td>40:00.0</td>
+                        <td>45:00.0</td>
+                        <td>15:00.0</td>
+                        <td>15/2/2016</td>
+                        <td>Non Heinous</td>
+                        <td>Convicted</td>
+                        <td>Sue-moto by Police</td>
+                        <td>KARNATAKA POLICE ACT 1963</td>
+                        <td>Street Gambling (87)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>KARNATAKA POLICE ACT, 1963 U/s: 87</td>
+                        <td>R S BIRADAR (PI)</td>
+                        <td>1898733</td>
+                        <td>NULL</td>
+                        <td>42900007</td>
+                        <td>PATTANASHETTI PETROL PUMP AMINAGAD, PATTANASHETTI PETROL PUMP AMINAGAD</td>
+                        <td>WEST FROM PS TOWARDS 1 KM</td>
+                        <td>AMINAGAD TOWN BEAT NO 1</td>
+                        <td>AMINAGAD</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2016000024</td>
+                        <td>1245</td>
+                        <td>10470124520160023</td>
+                    </tr>
+                    <tr>
+                        <td>Bagalkot</td>
+                        <td>Amengad PS</td>
+                        <td>0025/2016</td>
+                        <td>1</td>
+                        <td>2016</td>
+                        <td>2</td>
+                        <td>50:00.0</td>
+                        <td>55:00.0</td>
+                        <td>30:00.0</td>
+                        <td>16/2/2016</td>
+                        <td>Non Heinous</td>
+                        <td>Convicted</td>
+                        <td>Sue-moto by Police</td>
+                        <td>KARNATAKA POLICE ACT 1963</td>
+                        <td>Gambling - Matka (78 Class C)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>KARNATAKA POLICE ACT, 1963 U/s: 78(III)</td>
+                        <td>C.A.KALABURGI (ASI)</td>
+                        <td>1018998</td>
+                        <td>NULL</td>
+                        <td>188800009</td>
+                        <td>AIHOLE VILLAGE RAVALAPDE TEMPEL BACK IN PUBLIC, AIHOLE VILLAGE RAVALAPDE TEMPEL BACK IN PUBLIC</td>
+                        <td>SOUTH FROME PS 8 KM</td>
+                        <td>RURAL BEAT NO 3</td>
+                        <td>AIHOLE</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>2016000025</td>
+                        <td>1245</td>
+                        <td>10470124520160024</td>
+                    </tr>
+                    <tr>
+                        <td>Bagalkot</td>
+                        <td>Amengad PS</td>
+                        <td>0027/2016</td>
+                        <td>1</td>
+                        <td>2016</td>
+                        <td>2</td>
+                        <td>30:00.0</td>
+                        <td>35:00.0</td>
+                        <td>25:00.0</td>
+                        <td>20/2/2016</td>
+                        <td>Non Heinous</td>
+                        <td>Pending Trial</td>
+                        <td>Sue-moto by Police</td>
+                        <td>KARNATAKA POLICE ACT 1963</td>
+                        <td>Gambling - Matka (78 Class C)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>KARNATAKA POLICE ACT, 1963 U/s: 78(III)</td>
+                        <td>C.A.KALABURGI (ASI)</td>
+                        <td>1018998</td>
+                        <td>NULL</td>
+                        <td>188800009</td>
+                        <td>CHIKKAMAGI BUS STAND NEAR, CHIKKAMAGI BUS STAND NEAR</td>
+                        <td>SOUTH FROM PS 15 KM</td>
+                        <td>RURAL BEAT NO 13</td>
+                        <td>KAMATAGI</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2016000026</td>
+                        <td>1245</td>
+                        <td>10470124520160025</td>
+                    </tr>
+                    <tr>
+                        <td>Bagalkot</td>
+                        <td>Amengad PS</td>
+                        <td>0028/2016</td>
+                        <td>1</td>
+                        <td>2016</td>
+                        <td>2</td>
+                        <td>35:00.0</td>
+                        <td>40:00.0</td>
+                        <td>00:00.0</td>
+                        <td>21/2/2016</td>
+                        <td>Heinous</td>
+                        <td>Pending Trial</td>
+                        <td>Written</td>
+                        <td>MOTOR VEHICLE ACCIDENTS FATAL</td>
+                        <td>Other Roads</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>IPC 1860 U/s: 279,337,338,304(A)</td>
+                        <td>Karuneshagowda J (PI)</td>
+                        <td>1820048</td>
+                        <td>NULL</td>
+                        <td>97500025</td>
+                        <td>GUDUR BUS STAND, GUDUR BUS STAND</td>
+                        <td>NORTH FROM PS 14 KM</td>
+                        <td>GUDUR TOWN BEAT NO 21</td>
+                        <td>GUDUR</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2016000027</td>
+                        <td>1245</td>
+                        <td>10470124520160026</td>
+                    </tr>
+                    <tr>
+                        <td>Bagalkot</td>
+                        <td>Amengad PS</td>
+                        <td>0029/2016</td>
+                        <td>1</td>
+                        <td>2016</td>
+                        <td>2</td>
+                        <td>20:00.0</td>
+                        <td>25:00.0</td>
+                        <td>00:00.0</td>
+                        <td>22/2/2016</td>
+                        <td>Non Heinous</td>
+                        <td>Convicted</td>
+                        <td>Sue-moto by Police</td>
+                        <td>KARNATAKA POLICE ACT 1963</td>
+                        <td>Street Gambling (87)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>KARNATAKA POLICE ACT, 1963 U/s: 87</td>
+                        <td>P.A.JADAV (PSI)</td>
+                        <td>1016018</td>
+                        <td>NULL</td>
+                        <td>188800039</td>
+                        <td>AIHOLE VILLAGE RAVALAPDE TEMPEL BACK IN PUBLIC, AIHOLE VILLAGE RAVALAPDE TEMPEL BACK IN PUBLIC</td>
+                        <td>SOUTH FROME PS 8 KM</td>
+                        <td>RURAL BEAT NO 3</td>
+                        <td>AIHOLE</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>2016000028</td>
+                        <td>1245</td>
+                        <td>10470124520160027</td>
+                    </tr>
+                    <tr>
+                        <td>Bagalkot</td>
+                        <td>Amengad PS</td>
+                        <td>0030/2016</td>
+                        <td>1</td>
+                        <td>2016</td>
+                        <td>2</td>
+                        <td>25:00.0</td>
+                        <td>30:00.0</td>
+                        <td>30:00.0</td>
+                        <td>23/2/2016</td>
+                        <td>Non Heinous</td>
+                        <td>Convicted</td>
+                        <td>Sue-moto by Police</td>
+                        <td>KARNATAKA POLICE ACT 1963</td>
+                        <td>Gambling - Matka (78 Class C)</td>
+                        <td>0</td
+                    
+                
+                
+    
+            </tbody>   
+        </table>
+    </section>
+
+    <footer>
+        &Copywrite; 2024 Police Dashboard
+    </footer>
+
+</body>
+
+</html>

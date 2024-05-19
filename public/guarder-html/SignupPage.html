@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Police Department Signup</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+      background-image: url('C:/Users/vaibh_e47rn93/dataprivacy/front_login/KSP1.png');
+      background-size: cover;
+    }
+
+    #Signup-container {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #video-feed {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+
+    #Signup-btn {
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #Signup-form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+
+    #Signup-status {
+      color: green;
+      font-weight: bold;
+    }
+
+    #Signup-error {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="Signup-container">
+    <h2>Police Department Signup</h2>
+    <div id="Signup-form">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <video id="video-feed" autoplay muted></video>
+      <a id="Signup-btn" href="#">Signup</a>
+
+      <p id="Signup-status"></p>
+      <p id="Signup-error"></p>
+    </div> 
+  </div>
+
+  <script>
+    async function setupCamera() {
+      const video = document.getElementById('video-feed');
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        video.srcObject = stream;
+        return new Promise((resolve) => {
+          video.onloadedmetadata = () => resolve(video);
+        });
+      } catch (error) {
+        console.error('Error accessing camera:', error);
+      }
+    }
+
+    async function simulateCameraSetup() {
+      const video = await setupCamera();
+      if (video) {
+        // Simulate camera capture after a delay
+        setTimeout(() => {
+          const canvas = document.createElement('canvas');
+          const context = canvas.getContext('2d');
+          canvas.width = video.videoWidth;
+          canvas.height = video.videoHeight;
+          context.drawImage(video, 0, 0, canvas.width, canvas.height);
+          const imageData = canvas.toDataURL('image/png');
+          detectFace(imageData);
+        }, 10000); // Simulate camera capture after 6 seconds
+      }
+    }
+
+    function detectFace(imageData) {
+      // Simulate face detection using the captured image data
+      console.log('Face detected:', imageData);
+      document.getElementById('Signup-btn').disabled = false;
+      document.getElementById('Signup-status').textContent = 'Face recognized successfully!';
+    }
+
+    function Signup(username, password, imageData) {
+      // Here you can implement the logic to check username and password
+
+      var PythonUserSignupPagePath = 
+
+
+      // if (username === 'admin' && password === 'admin') {
+      //   return true; // Credentials are correct
+      // } else {
+      //   return false; // Credentials are incorrect
+      // }
+    }
+
+    async function main() {
+      await simulateCameraSetup();
+
+      const SignupButton = document.getElementById('Signup-btn');
+      const usernameInput = document.getElementById('username');
+      const passwordInput = document.getElementById('password');
+      const SignupStatus = document.getElementById('Signup-status');
+      const SignupError = document.getElementById('Signup-error');
+
+      SignupButton.addEventListener('click', async () => {
+        const username = usernameInput.value;
+        const password = passwordInput.value;
+        const isFaceRecognized = SignupStatus.textContent === 'Face recognized successfully!';
+        if (isFaceRecognized) {
+          const isLoggedIn = Signup(username, password);
+          if (isLoggedIn) {
+            SignupError.textContent = '';
+            SignupStatus.textContent = 'Signup successful!';
+            const confirmation = confirm('Signup successful! Click OK to proceed to the QR code page.');
+            if (confirmation) {
+              window.location.href = 'qrcode.html'; // Redirect to qrcode.html page
+            }
+          } else {
+            SignupError.textContent = 'Incorrect credentials!';
+            SignupStatus.textContent = '';
+          }
+        } else {
+          SignupError.textContent = 'Please wait for face recognition!';
+          SignupStatus.textContent = 'Face not recognized!';
+        }
+      });
+    }
+
+    document.getElementById('forgot-password').addEventListener('click', () => {
+      alert('You will receive an email for resetting the password.');
+      // Implement logic to send reset password email
+    });
+
+    document.addEventListener('DOMContentLoaded', main);
+  </script>
+</body>
+</html>

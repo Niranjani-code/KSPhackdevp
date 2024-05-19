@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Charge Sheeted Details</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0; /* Light gray background */
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #fff; /* White background */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd; /* Bottom border */
+    }
+    th {
+        background-color: #3498db; /* Blue background for header */
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2; /* Light gray background for even rows */
+    }
+    tr:hover {
+        background-color: #e2e2e2; /* Darker background color on hover */
+    }
+    .decrypt-btn button {
+        background-color: #3498db;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .decrypt-btn button:hover {
+        background-color: #2980b9;
+    }
+</style>
+</head>
+<body>
+<h2>Victim Info Data</h2>
+<table>
+<thead>
+<tr>
+<th>Month</th>
+<th>VictimName</th>
+<th>age</th>
+<th>Caste</th>
+<th>Profession</th>
+<th>Sex</th>
+<th>PresentAddress</th>
+<th>PresentCity</th>
+<th>PresentState</th>
+<th>PermanentAddress</th>
+<th>PermanentCity</th>
+<th>PermanentState</th>
+<th>Nationality_Name</th>
+<th>DOB</th>
+<th>PersonType</th>
+<th>InjuryType</th>
+<th>Injury_Nature</th>
+<th>Crime_No</th>
+<th>Arr_ID</th>
+<th>Victim_ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>MA0YIICMZ73VWGZY</td>
+<td>45</td>
+<td>KURAB</td>
+<td>MWLRU4K0VSUT4YMY</td>
+<td>FEMALE</td>
+<td>CHILLAPUR,TQ-HUANGUND</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>Injured</td>
+<td>Grievous</td>
+<td></td>
+<td>10470124520160040</td>
+<td>PKEPD5HYHSMH36CG</td>
+<td>V0FKZWA1RT29IFXJ</td>
+</tr>
+<tr>
+<td>1</td>
+<td>VFENPEJ9K8CO307E</td>
+<td>14</td>
+<td>Lingayath</td>
+<td>GIKZS9MOVYAMHDMD</td>
+<td>FEMALE</td>
+<td>HUVINAHALLI,TQ-HUANGUND</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>NULL</td>
+<td>Deceased</td>
+<td>Fatal</td>
+<td></td>
+<td>9GYN5Y1KZDA8OAA7</td>
+<td>2FA60TGKEGQXUHIM</td>
+<td>JM901XO5PJ8AQU1H</td>
+</tr>
+<tr>
+<td>1</td>
+<td>A3LVCG9C4QNO5UCV</td>
+<td>49</td>
+<td>NULL</td>
+<td>EI9FT7XTB1NTT8BW</td>
+<td>MALE</td>
+<td>BASAVA NAGAR GOKAK CTS 190/5 PLAT NO 2,GOKAK</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>NULL</td>
+<td>Injured</td>
+<td>Fatal</td>
+<td></td>
+<td>OVV69K91X9U2Z1EE</td>
+<td>LO31BP8S4529P7SY</td>
+<td>OR9N5054YJ67DOCO</td>
+</tr>
+<tr>
+<td>1</td>
+<td>AOENJ6T6IPHCOWCN</td>
+<td>0</td>
+<td>NULL</td>
+<td>VYVONDSQI6UFRO5I</td>
+<td>MALE</td>
+<td>BASAVA NAGAR GOKAK CTS 190/5 PLAT NO 2,GOKAK</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>NULL</td>
+<td>Injured</td>
+<td>Fatal</td>
+<td></td>
+<td>CW2L9LRRBQ3RUU6Q</td>
+<td>QOT14M51XDYYYWOZ</td>
+<td>N72VMD33CPUCBKCE</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1JONJS2SN6UU77N3</td>
+<td>34</td>
+<td>NULL</td>
+<td>WD50JIOXFWIG4WV1</td>
+<td>MALE</td>
+<td>BASAVA NAGAR GOKAK CTS 190/5 PLAT NO 2,TQ-GOKAK</td>
+<td>Belagavi Dist</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Belagavi Dist</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>NULL</td>
+<td>Injured</td>
+<td>Fatal</td>
+<td></td>
+<td>QZZ5199HY00DBMQT</td>
+<td>CFR9KAZ7MBFRW9KD</td>
+<td>3RW729P022ANV44B</td>
+</tr>
+<tr>
+<td>1</td>
+<td>D5OHPG6AFV79IKAG</td>
+<td>36</td>
+<td>NULL</td>
+<td>1H3CIVF6IPDK4V53</td>
+<td>MALE</td>
+<td>BASAVA NAGAR GOKAK CTS 190/5 PLAT NO 2,TQ-GOKAK</td>
+<td>Belagavi Dist</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Belagavi Dist</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>NULL</td>
+<td>Injured</td>
+<td>Fatal</td>
+<td></td>
+<td>LQFN4KACFJ0WBTCP</td>
+<td>06LWERNGV6HHVTM5</td>
+<td>Q0K2MHQW23L9DSBN</td>
+</tr>
+<tr>
+<td>1</td>
+<td>O7LRWODJT7IEKGEN</td>
+<td>60</td>
+<td>GANIGA</td>
+<td>O9B9IKLOHTJTTJR7</td>
+<td>FEMALE</td>
+<td>AMBLIKOPPA,TQ-HUNGUND</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>NULL</td>
+<td>Deceased</td>
+<td>Fatal</td>
+<td></td>
+<td>J8UW92DF0Q13J4W7</td>
+<td>BG2EB9ELGAE2JAAS</td>
+<td>N20NE3FJGDUD0KP8</td>
+</tr>
+<tr>
+<td>1</td>
+<td>TJEQ5MMTY0VFJ4ZN</td>
+<td>40</td>
+<td>MUSLIM</td>
+<td>CXJK4QBMBBW3GCVP</td>
+<td>MALE</td>
+<td>BELAGAVI,TQ-BELAGAVI</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>NULL</td>
+<td>Injured</td>
+<td>Fatal</td>
+<td></td>
+<td>Y6GVQ0FD7C7UBIT6</td>
+<td>M16LYC0KEHHJ0BUB</td>
+<td>A0ZK3A6WCV62FWJM</td>
+</tr>
+<tr>
+<td>1</td>
+<td>C8A4WAYFX49IRXFH</td>
+<td>20</td>
+<td>Lingayath</td>
+<td>8JP9JYJCJ8S8RCRP</td>
+<td>MALE</td>
+<td>HIREBADAWADAGI,TQ-HUNAGUND</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>NULL</td>
+<td>Injured</td>
+<td>Fatal</td>
+<td></td>
+<td>8LGBES345LW1E016</td>
+<td>F1CY36JOB8BE1AT5</td>
+<td>HQ65S3SN8LULRH1P</td>
+</tr>
+<tr>
+<td>1</td>
+<td>CYNMEV2BU4BZDN7O</td>
+<td>18</td>
+<td>Lingayath</td>
+<td>KKWIZUN00MP2EW8W</td>
+<td>MALE</td>
+<td>HIREBADAWADAGI,TQ-HUNAGUND</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>NULL</td>
+<td>Injured</td>
+<td>Fatal</td>
+<td></td>
+<td>D38F3XOJ7BRNC0DI</td>
+<td>5S06GXCIGOHJTMEK</td>
+<td>19O0CCQT51RSQJFD</td>
+</tr>
+<tr>
+<td>1</td>
+<td>9UFD30W87FKZG3WI</td>
+<td>55</td>
+<td>NULL</td>
+<td>GSE66DTOT0BMCMUD</td>
+<td>MALE</td>
+<td>GUDUR SC,TQ-HUNAGUND</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>NULL</td>
+<td>Deceased</td>
+<td>Fatal</td>
+<td></td>
+<td>H46PI77QNYE76F63</td>
+<td>ZNVWM10L76E7BE85</td>
+<td>3LVI3UPBVHNKU6GQ</td>
+</tr>
+<tr>
+<td>1</td>
+<td>HMVLHIUGRHF4K3HA</td>
+<td>35</td>
+<td>Lingayath</td>
+<td>MA014977MEDV9SME</td>
+<td>FEMALE</td>
+<td>KELU,TQ-HUNAGUND</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>complainnant</td>
+<td>Fatal</td>
+<td></td>
+<td>10470124520160015</td>
+<td>Z3IXSBG5UNCYNOL0</td>
+<td>DQ8I84MHT7DXF5WD</td>
+</tr>
+<tr>
+<td>2</td>
+<td>WJNIMSOX3TDO9Y0Y</td>
+<td>47</td>
+<td>Lingayath</td>
+<td>08OG07A1GJQSBZ6U</td>
+<td>MALE</td>
+<td>ILAL,TQ-HUNAGUND</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>Injured</td>
+<td>Fatal</td>
+<td></td>
+<td>10470124520160021</td>
+<td>I93FR7QDG8KT1B2U</td>
+<td>G8217GYEVXUQ1MH4</td>
+</tr>
+<tr>
+<td>2</td>
+<td>6185YDACLFR04KAM</td>
+<td>22</td>
+<td>NULL</td>
+<td>6QOG07BM8B0Q368X</td>
+<td>FEMALE</td>
+<td>GUDUR S C,TQ-HUNAGUND</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>,</td>
+<td>Bagalkot</td>
+<td>Karnataka</td>
+<td>India</td>
+<td>Deceased</td>
+<td>Fatal</td>
+<td></td>
+<td>10470124520160024</td>
+<td>HBAL5M8W1QJ0EF44</td>
+<td>V4N0KBGVD6IPPP8G</td>
+</tr>
+</tbody>
+</table>
+<div class="decrypt-btn">
+    <button onclick="window.location.href='http://localhost:3000/guarder-html/Victim_info_decryptkey.html'">Decrypt</button>
+</div>
+</body>
+</html>

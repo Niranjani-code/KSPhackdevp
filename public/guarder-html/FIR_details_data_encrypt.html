@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Charge Sheeted Details</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0; /* Light gray background */
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #fff; /* White background */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd; /* Bottom border */
+    }
+    th {
+        background-color: #3498db; /* Blue background for header */
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2; /* Light gray background for even rows */
+    }
+    tr:hover {
+        background-color: #e2e2e2; /* Darker background color on hover */
+    }
+    .decrypt-btn button {
+        background-color: #3498db;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .decrypt-btn button:hover {
+        background-color: #2980b9;
+    }
+</style>
+</head>
+<body>
+<header>
+<h1>FIR Details Data</h1>
+</header>
+<section class="container">
+<table>
+<thead>
+<tr>
+<th>District Name</th>
+<th>Unit Name</th>
+<th>FIR No</th>
+<th>RI</th>
+<th>Year</th>
+<th>Month</th>
+<th>Offence From Date</th>
+<th>Offence To Date</th>
+<th>FIR Reg DateTime</th>
+<th>FIR Date</th>
+<th>FIR Type</th>
+<th>FIR Stage</th>
+<th>Complaint Mode</th>
+<th>CrimeGroup Name</th>
+<th>CrimeHead Name</th>
+<th>Latitude</th>
+<th>Longitude</th>
+<th>Act Section</th>
+<th>IO Name</th>
+<th>KGID</th>
+<th>IO Assigned Date</th>
+<th>Internal IO</th>
+<th>Place of Offence</th>
+<th>Distance from PS</th>
+<th>Beat Name</th>
+<th>Village Area Name</th>
+<th>Male</th>
+<th>Female</th>
+<th>Boy</th>
+<th>Girl</th>
+<th>Age 0</th>
+<th>Victim Count</th>
+<th>Accused Count</th>
+<th>Arrested Male</th>
+<th>Arrested Female</th>
+<th>Arrested Count No.</th>
+<th>Accused ChargeSheeted Count</th>
+<th>Conviction Count</th>
+<th>FIR ID</th>
+<th>Unit ID</th>
+<th>Crime No</th>
+</tr>
+</thead>
+<tbody>
+<!-- Add your dataset rows here -->
+<!-- Example row: -->
+<tr>
+<td>Bagalkot</td>
+<td>4IZ52BA99PQIQJLM</td>
+<td>9TJVTHVYL6F0FJ4X</td>
+<td>1</td>
+<td>2016</td>
+<td>1</td>
+<td>00:00.0</td>
+<td>05:00.0</td>
+<td>00:00.0</td>
+<td>5/1/2016</td>
+<td>Non Heinous</td>
+<td>Dis/Acq</td>
+<td>Written</td>
+<td>POCSO</td>
+<td>Others</td>
+<td>0</td>
+<td>0</td>
+<td>PROTECTION OF CHILDREN FROM SEXUAL OFFENCES ACT 2012 U/s: 12 IPC 1860 U/s: 306,363 PROTECTION OF CHILDREN FROM SEXUAL OFFENCES ACT 2012 U/s: 18 </td>
+<td>4BI8YV3CJE8AJEQW</td>
+<td>LOTEAXOAA3WJVUVT</td>
+<td>HGX5ZDSS4C8ZTO9I</td>
+<td>42900007</td>
+<td>KAMATAGI BUS STAND, KAMATAGI BUS STAND</td>
+<td>WEST FROM PS 12 KM</td>
+<td>RURAL BEAT NO 13</td>
+<td>KAMATAGI</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>Q84GZEN7LX2GSCJC</td>
+<td>CBVJIHN85PMCCUPX</td>
+<td>W8ANIKMTH244Q0IT</td>
+</tr>
+<tr>
+<td>Bagalkot</td>
+<td>QY89I0KYPOARMVVP</td>
+<td>SFN3WCGVUFLDSOG8</td>
+<td>1</td>
+<td>2016</td>
+<td>1</td>
+<td>30:00.0</td>
+<td>35:00.0</td>
+<td>00:00.0</td>
+<td>12/1/2016</td>
+<td>Non Heinous</td>
+<td>Convicted</td>
+<td>Sue-moto by Police</td>
+<td>KARNATAKA POLICE ACT 1963</td>
+<td>Street Gambling (87)</td>
+<td>0</td>
+<td>0</td>
+<td>KARNATAKA POLICE ACT, 1963 U/s: 87</td>
+<td>VGULA3LV9A5ZC0SL</td>
+<td>VL3K1D6FZSIHJ4IB</td>
+<td>MO0DAMYC61Z1YGLG</td>
+<td>123600010</td>
+<td>RAKKASAGI VILLEGE IN FRONT MOUNESHWAR TEMPEL, RAKKASAGI VILLEGE IN FRONT MOUNESHWAR TEMPEL</td>
+<td>WEST FROM PS 2 KM</td>
+<td>RURAL BEAT NO 6</td>
+<td>SULEBAVI</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>5</td>
+<td>5</td>
+<td>2</td>
+<td>5BNE5XO193MBZDCS</td>
+<td>EWGAQOPYF5D5G566</td>
+<td>TEZ7NIRWGS5HK1VU</td>
+</tr>
+<tr>
+<tr>
+<td>Bagalkot</td>
+<td>M1R723U8KJ887URC</td>
+<td>1NLM75IE255RCLLM</td>
+<td>1</td>
+<td>2016</td>
+<td>2</td>
+<td>25:00.0</td>
+<td>30:00.0</td>
+<td>10:00.0</td>
+<td>10/2/2016</td>
+<td>Non Heinous</td>
+<td>Pending Trial</td>
+<td>Written</td>
+<td>THEFT</td>
+<td>Other Items Not Included Above</td>
+<td>0</td>
+<td>0</td>
+<td>IPC 1860 U/s: 379 MMDR (MINES AND MINERALS REGULATION OF DEVELOPMENT) ACT 1957 U/s: 21,4(1A),4(1)</td>
+<td>0SD9DIXLBJFONDBD</td>
+<td>TJ6HC7AFI5IXFOYN</td>
+<td>NRS5WHLBR5JAAGXT</td>
+<td>188800039</td>
+<td>MIDDLE OF AIHOLE KALIGUDD VILLAGE MALAPRABHA RIVER, MIDDLE OF AIHOLE KALIGUDD VILLAGE MALAPRABHA RIVER</td>
+<td>SOUTH FROM PS TOWARDS 11 KM</td>
+<td>RURAL BEAT NO 3</td>
+<td>AIHOLE</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>5A2J4J07YF8HLIKL</td>
+<td>EAQNSCKLEUGO1D15</td>
+<td>EDSNBGVODEFP7VTJ</td>
+</tr>
+<tr>
+<td>Bagalkot</td>
+<td>XOLPWJFESSMSHEKI</td>
+<td>CVNLU3ALB3H52TGU</td>
+<td>1</td>
+<td>2016</td>
+<td>2</td>
+<td>30:00.0</td>
+<td>35:00.0</td>
+<td>20:00.0</td>
+<td>11/2/2016</td>
+<td>Heinous</td>
+<td>Convicted</td>
+<td>Written</td>
+<td>MOTOR VEHICLE ACCIDENTS FATAL</td>
+<td>Other Roads</td>
+<td>0</td>
+<td>0</td>
+<td>IPC 1860 U/s: 279,337,338,304(A)</td>
+<td>U7KIS5YVPWE1YSJH</td>
+<td>4U8BW2K7ED80RYMA</td>
+<td>JZDQ0BOF8Z3R1WR1</td>
+<td>97500025</td>
+<td>GUDUR BUS STAND, GUDUR BUS STAND</td>
+<td>NORTH FROM PS 14 KM</td>
+<td>GUDUR TOWN BEAT NO 21</td>
+<td>GUDUR</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>RLT9WMJ9S5HS1ZGM</td>
+<td>GGROZSWEK67ZFBY8</td>
+<td>2DMASQ2LHOK87QZK</td>
+</tr>
+<tr>
+<td>Bagalkot</td>
+<td>SKUX6AIG6GSXN9TT</td>
+<td>OMUGL94GQF0JCTCD</td>
+<td>1</td>
+<td>2016</td>
+<td>2</td>
+<td>40:00.0</td>
+<td>45:00.0</td>
+<td>15:00.0</td>
+<td>15/2/2016</td>
+<td>Non Heinous</td>
+<td>Convicted</td>
+<td>Sue-moto by Police</td>
+<td>KARNATAKA POLICE ACT 1963</td>
+<td>Street Gambling (87)</td>
+<td>0</td>
+<td>0</td>
+<td>KARNATAKA POLICE ACT, 1963 U/s: 87</td>
+<td>P8UPN777O3541JBC</td>
+<td>LCDM3SZBSK414GN7</td>
+<td>RO4Q3QL3IUI7GTGT</td>
+<td>42900007</td>
+<td>PATTANASHETTI PETROL PUMP AMINAGAD, PATTANASHETTI PETROL PUMP AMINAGAD</td>
+<td>WEST FROM PS TOWARDS 1 KM</td>
+<td>AMINAGAD TOWN BEAT NO 1</td>
+<td>AMINAGAD</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>QCTVC2GH7HUJO4B8</td>
+<td>UIY6JEUHO4OOMM1Z</td>
+<td>KHTZ7RVC19BS0PZ6</td>
+</tr>
+<tr>
+<td>Bagalkot</td>
+<td>N70KBTQ9W2XH6188</td>
+<td>YUWN8N5L2QE7QAQI</td>
+<td>1</td>
+<td>2016</td>
+<td>2</td>
+<td>50:00.0</td>
+<td>55:00.0</td>
+<td>30:00.0</td>
+<td>16/2/2016</td>
+<td>Non Heinous</td>
+<td>Convicted</td>
+<td>Sue-moto by Police</td>
+<td>KARNATAKA POLICE ACT 1963</td>
+<td>Gambling - Matka (78 Class C)</td>
+<td>0</td>
+<td>0</td>
+<td>KARNATAKA POLICE ACT, 1963 U/s: 78(III)</td>
+<td>UKHXHBTAQPS192J8</td>
+<td>VT4P7HMILG10TTEN</td>
+<td>11VMOY1V6XB00ONG</td>
+<td>188800009</td>
+<td>AIHOLE VILLAGE RAVALAPDE TEMPEL BACK IN PUBLIC, AIHOLE VILLAGE RAVALAPDE TEMPEL BACK IN PUBLIC</td>
+<td>SOUTH FROME PS 8 KM</td>
+<td>RURAL BEAT NO 3</td>
+<td>AIHOLE</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>03CQIV2E7GAB83LY</td>
+<td>QSIIGPO6FY8CV21A</td>
+<td>615Y6FRDTBLDBIH6</td>
+</tr>
+<tr>
+<td>Bagalkot</td>
+<td>APT194R1E959EA6N</td>
+<td>7QI9449YBAPA148E</td>
+<td>1</td>
+<td>2016</td>
+<td>2</td>
+<td>30:00.0</td>
+<td>35:00.0</td>
+<td>25:00.0</td>
+<td>20/2/2016</td>
+<td>Non Heinous</td>
+<td>Pending Trial</td>
+<td>Sue-moto by Police</td>
+<td>KARNATAKA POLICE ACT 1963</td>
+<td>Gambling - Matka (78 Class C)</td>
+<td>0</td>
+<td>0</td>
+<td>KARNATAKA POLICE ACT, 1963 U/s: 78(III)</td>
+<td>R5O44O8WR6081P5X</td>
+<td>AHRG91D52BZ589Y6</td>
+<td>GQ9L41LTE5K3CJ4J</td>
+<td>188800009</td>
+<td>CHIKKAMAGI BUS STAND NEAR, CHIKKAMAGI BUS STAND NEAR</td>
+<td>SOUTH FROM PS 15 KM</td>
+<td>RURAL BEAT NO 13</td>
+<td>KAMATAGI</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1LXFHLLPOCJS483K</td>
+<td>IIG1QHEJ8UTG7XFT</td>
+<td>VLNBKA71RKMQU0Z7</td>
+</tr>
+<tr>
+<td>Bagalkot</td>
+<td>8LS2QNTE5OWOHB70</td>
+<td>K5CGKSBMWUC741M5</td>
+<td>1</td>
+<td>2016</td>
+<td>2</td>
+<td>35:00.0</td>
+<td>40:00.0</td>
+<td>00:00.0</td>
+<td>21/2/2016</td>
+<td>Heinous</td>
+<td>Pending Trial</td>
+<td>Written</td>
+<td>MOTOR VEHICLE ACCIDENTS FATAL</td>
+<td>Other Roads</td>
+<td>0</td>
+<td>0</td>
+<td>IPC 1860 U/s: 279,337,338,304(A)</td>
+<td>JPEIWI9HSLGO1FYB</td>
+<td>EPPBIYO9FJL1BOCG</td>
+<td>A0U4Z3RYO5H60CCT</td>
+<td>97500025</td>
+<td>GUDUR BUS STAND, GUDUR BUS STAND</td>
+<td>NORTH FROM PS 14 KM</td>
+<td>GUDUR TOWN BEAT NO 21</td>
+<td>GUDUR</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>WTV02GIHIT5PEXK9</td>
+<td>POWMQ2T6NHR51TI0</td>
+<td>EZJN5T81J3E2442C</td>
+</tr>
+<tr>
+<td>Bagalkot</td>
+<td>5KDWXDIX1ZNRVE7U</td>
+<td>MVFH9NVG65OPANZU</td>
+<td>1</td>
+<td>2016</td>
+<td>2</td>
+<td>20:00.0</td>
+<td>25:00.0</td>
+<td>00:00.0</td>
+<td>22/2/2016</td>
+<td>Non Heinous</td>
+<td>Convicted</td>
+<td>Sue-moto by Police</td>
+<td>KARNATAKA POLICE ACT 1963</td>
+<td>Street Gambling (87)</td>
+<td>0</td>
+<td>0</td>
+<td>KARNATAKA POLICE ACT, 1963 U/s: 87</td>
+<td>R2ZP7GSM0J2YXJFH</td>
+<td>HD23WTAO7VWQCUWP</td>
+<td>TX3LKXVIXPM5FPK3</td>
+<td>188800039</td>
+<td>AIHOLE VILLAGE RAVALAPDE TEMPEL BACK IN PUBLIC, AIHOLE VILLAGE RAVALAPDE TEMPEL BACK IN PUBLIC</td>
+<td>SOUTH FROME PS 8 KM</td>
+<td>RURAL BEAT NO 3</td>
+<td>AIHOLE</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>FVERPGQ13HEB7XJG</td>
+<td>B7IP7TTRHYMF376O</td>
+<td>R0NYIPWIAD0NKZEJ</td>
+</tr>
+<tr>
+<td>Bagalkot</td>
+<td>ZJFOWQ21XKT9G8IR</td>
+<td>9992O9PBPS9MYEK4</td>
+<td>1</td>
+<td>2016</td>
+<td>2</td>
+<td>25:00.0</td>
+<td>30:00.0</td>
+<td>30:00.0</td>
+<td>23/2/2016</td>
+<td>Non Heinous</td>
+<td>Convicted</td>
+<td>Sue-moto by Police</td>
+<td>KARNATAKA POLICE ACT 1963</td>
+<td>Gambling - Matka (78 Class C)</td>
+<td>0</td>
+</tr></tr></tbody></table>
+</section>
+<footer>
+        &amp;Copywrite 2024 Police Dashboard
+    </footer>
+    <div class="decrypt-btn">
+        <button onclick="window.location.href='http://localhost:3000/guarder-html/FIR_details_decryptkey.html'">Decrypt</button>
+    </div>
+</body>
+</html>
