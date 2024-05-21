@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Police Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background-image: url('police_background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: #467bc2;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2f66ad;
+            overflow: hidden;
+            font-size: 12px;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 8px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .home-link {
+            float: left;
+            color: white;
+            padding: 10px 16px;
+            text-decoration: none;
+        }
+
+        .contact-us-link,
+        .sign-out-link {
+            float: right;
+            color: white;
+            padding: 10px 16px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #141516;
+            color: rgb(29, 25, 25);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-form {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        .contact-form h3 {
+            color: #1978c7;
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #1978c7;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #155a96;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <nav>
+        <a href="http://localhost:3000/index.html" class="home-link">Home</a>
+        <a href="http://localhost:3000/guarder-html/signout.html" class="sign-out-link">Sign Out</a>
+        <a href="contact_us.html" class="contact-us-link">Contact Us</a>
+    </nav>
+
+    <section>
+        <div class="contact-form">
+            <h3>Get in Touch</h3>
+            <form id="submission-form" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="submission-message" style="display: none; color: green;">Submission successful!</p>
+        </div>
+    </section>
+
+    <footer>
+        &Copywrite; 2024 Police Dashboard
+    </footer>
+
+    <script>
+        document.getElementById('submission-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission behavior
+
+            // Show the submission message
+            document.getElementById('submission-message').style.display = 'block';
+
+            // Reset the form after a delay (optional)
+            setTimeout(function () {
+                document.getElementById('submission-form').reset();
+                document.getElementById('submission-message').style.display = 'none';
+            }, 2000); // Reset after 2 seconds (2000 milliseconds)
+        });
+    </script>
+
+</body>
+
+</html>
